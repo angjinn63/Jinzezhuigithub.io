@@ -3,10 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name | Portfolio</title>
-</head>
-<body>
-  <h1>Hello, I’m Your Name</h1>
-  <p>This is my digital portfolio.</p>
-</body>
+  <title>Siting (Mavis) Chen | Portfolio</title>
+  <meta name="description" content="Digital portfolio of Siting (Mavis) Chen, MPS Informatics graduate student focused on data analytics, fintech, and user-centered technology solutions." />
+  <style>
+    :root {
+      --bg: #f7f9fc;
+      --surface: #ffffff;
+      --surface-2: #f0f4fa;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --line: #dbe4f0;
+      --primary: #1d4ed8;
+      --primary-2: #2563eb;
+      --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      --radius: 18px;
+      --max: 1120px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, #f8fbff 0%, #f7f9fc 100%);
+      line-height: 1.65;
+    }
+
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    img { max-width: 100%; display: block; border-radius: 14px; }
+
+    .container {
+      width: min(calc(100% - 32px), var(--max));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(14px);
+      background: rgba(247, 249, 252, 0.86);
+      border-bottom: 1px solid rgba(219, 228, 240, 0.9);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 72px;
+      gap: 20px;
+    }
+
+    .brand {
+      font-weight: 800;
+      font-size: 1rem;
+      letter-spacing: 0.01em;
+      color: var(--text);
+    }
+
+    .brand span { color: var(--primary); }
+
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
 </html>
