@@ -72,4 +72,723 @@
       align-items: center;
     }
 
+    .nav-links a {
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a:hover { color: var(--primary); text-decoration: none; }
+
+    .hero {
+      padding: 76px 0 48px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 28px;
+      align-items: stretch;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-copy {
+      padding: 42px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: #eaf1ff;
+      color: var(--primary);
+      font-size: 0.86rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    h1, h2, h3 { line-height: 1.2; margin: 0 0 14px; }
+    h1 { font-size: clamp(2.2rem, 5vw, 3.7rem); letter-spacing: -0.03em; }
+    h2 { font-size: clamp(1.6rem, 3vw, 2.3rem); letter-spacing: -0.02em; }
+    h3 { font-size: 1.15rem; }
+
+    .lead {
+      font-size: 1.06rem;
+      color: var(--muted);
+      max-width: 60ch;
+      margin-bottom: 24px;
+    }
+
+    .actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 24px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 18px;
+      border-radius: 999px;
+      border: 1px solid var(--primary);
+      font-weight: 700;
+      transition: 0.2s ease;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-2);
+      text-decoration: none;
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      background: #fff;
+      color: var(--primary);
+    }
+
+    .btn-secondary:hover {
+      background: #f8fbff;
+      text-decoration: none;
+      transform: translateY(-1px);
+    }
+
+    .hero-panel {
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      justify-content: center;
+      background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+    }
+
+    .stat-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 8px;
+    }
+
+    .stat {
+      border: 1px solid var(--line);
+      background: var(--surface-2);
+      border-radius: 14px;
+      padding: 16px;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 1.4rem;
+      margin-bottom: 4px;
+    }
+
+    section {
+      padding: 28px 0 18px;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    .section-head p {
+      margin: 0;
+      color: var(--muted);
+      max-width: 62ch;
+    }
+
+    .about-grid,
+    .skills-grid,
+    .contact-grid,
+    .extra-grid {
+      display: grid;
+      gap: 20px;
+    }
+
+    .about-grid {
+      grid-template-columns: 1.15fr 0.85fr;
+    }
+
+    .content-card { padding: 28px; }
+
+    .tag-list {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 14px;
+    }
+
+    .tag {
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: var(--surface-2);
+      border: 1px solid var(--line);
+      color: #334155;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .project-grid {
+      display: grid;
+      gap: 20px;
+    }
+
+    .project-card {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 22px;
+      padding: 24px;
+    }
+
+    .project-media {
+      min-height: 240px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: linear-gradient(135deg, #dbeafe 0%, #eff6ff 45%, #f8fbff 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+
+    .project-placeholder {
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.85), rgba(255,255,255,0.95)),
+        linear-gradient(135deg, #60a5fa, #2563eb);
+      border: 1px dashed #93c5fd;
+      padding: 18px;
+      display: grid;
+      gap: 12px;
+      align-content: start;
+    }
+
+    .project-placeholder .window {
+      height: 18px;
+      width: 110px;
+      background: #bfdbfe;
+      border-radius: 999px;
+    }
+
+    .project-placeholder .line {
+      height: 12px;
+      background: #dbeafe;
+      border-radius: 999px;
+    }
+
+    .project-placeholder .line.short { width: 60%; }
+    .project-placeholder .line.mid { width: 78%; }
+
+    .project-content h3 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+
+    .project-meta {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+
+    .pill {
+      padding: 6px 10px;
+      font-size: 0.82rem;
+      border-radius: 999px;
+      background: #eef2ff;
+      color: #4338ca;
+      border: 1px solid #c7d2fe;
+      font-weight: 700;
+    }
+
+    .project-content p { margin: 0 0 12px; color: #374151; }
+    .project-content ul {
+      margin: 10px 0 14px 18px;
+      padding: 0;
+    }
+
+    .project-links {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+
+    .skills-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .skill-card ul {
+      margin: 10px 0 0 18px;
+      padding: 0;
+    }
+
+    .resume-box {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 24px 28px;
+    }
+
+    .contact-grid { grid-template-columns: 1fr 1fr; }
+    .extra-grid { grid-template-columns: 1fr 1fr; }
+
+    footer {
+      padding: 36px 0 50px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .muted { color: var(--muted); }
+
+    @media (max-width: 960px) {
+      .hero-grid,
+      .about-grid,
+      .project-card,
+      .skills-grid,
+      .contact-grid,
+      .extra-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-copy,
+      .hero-panel,
+      .content-card,
+      .project-card {
+        padding: 22px;
+      }
+
+      .section-head {
+        flex-direction: column;
+        align-items: start;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 14px 0;
+      }
+
+      .nav-links {
+        gap: 12px;
+      }
+
+      .hero {
+        padding-top: 36px;
+      }
+
+      .actions,
+      .project-links {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .btn { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container nav">
+      <a class="brand" href="#home">Siting <span>Chen</span></a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="card hero-copy">
+          <div class="eyebrow">Digital Portfolio</div>
+          <h1>Siting (Mavis) Chen</h1>
+          <p class="lead">
+            Graduate student in Informatics with a background in engineering, data analytics, and financial technology.
+            I build practical, user-centered solutions across web applications, optimization, and data-driven decision support.
+          </p>
+          <p class="lead">
+            I am interested in roles such as Data Analyst, Product Analyst, Business Analyst, and technology-focused risk or operations roles where I can combine technical execution with problem solving and clear communication.
+          </p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-secondary" href="#contact">Get In Touch</a>
+          </div>
+        </div>
+
+        <div class="card hero-panel">
+          <h3>Professional Snapshot</h3>
+          <p class="muted">
+            MPS Informatics candidate at Northeastern University with prior training in Industrial Engineering and experience spanning frontend development, analytics, and applied research.
+          </p>
+          <div class="stat-grid">
+            <div class="stat">
+              <strong>4</strong>
+              <span class="muted">Selected projects</span>
+            </div>
+            <div class="stat">
+              <strong>3+</strong>
+              <span class="muted">Core domains</span>
+            </div>
+            <div class="stat">
+              <strong>Tech</strong>
+              <span class="muted">Web, data, ML</span>
+            </div>
+            <div class="stat">
+              <strong>Focus</strong>
+              <span class="muted">Impact and usability</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>About Me</h2>
+            <p>A concise introduction to my academic background, technical interests, and career direction.</p>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <div class="card content-card">
+            <p>
+              I am a graduate student in the <strong>Master of Professional Studies in Informatics</strong> program at Northeastern University. My academic journey has been shaped by interdisciplinary training across engineering, data analysis, and technology-enabled problem solving.
+            </p>
+            <p>
+              Through coursework and team projects, I have developed experience in <strong>frontend development, data analytics, machine learning, and product-oriented thinking</strong>. I enjoy working on projects that require both technical implementation and clear communication, especially when the goal is to make complex information more practical and accessible for users.
+            </p>
+            <p>
+              My recent work includes building web applications, exploring data-driven financial tools, and contributing to optimization-focused capstone work. Across these experiences, I have strengthened my ability to collaborate in teams, translate requirements into working solutions, and reflect critically on how technical systems create value in real settings.
+            </p>
+          </div>
+
+          <div class="card content-card">
+            <h3>Areas of Interest</h3>
+            <div class="tag-list">
+              <span class="tag">Data Analytics</span>
+              <span class="tag">Frontend Development</span>
+              <span class="tag">FinTech</span>
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Optimization</span>
+              <span class="tag">Product Thinking</span>
+              <span class="tag">UX for Decision Support</span>
+              <span class="tag">Agile Collaboration</span>
+            </div>
+            <h3 style="margin-top:22px;">Career Goal</h3>
+            <p class="muted">
+              To contribute to data-informed and user-focused technology teams where I can bridge analysis, implementation, and communication in support of better business and product decisions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Selected Projects</h2>
+            <p>
+              A curated set of academic and applied projects highlighting my experience in web development, analytics, optimization, and financial technology.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-grid">
+          <article class="card project-card">
+            <div class="project-media">
+              <div class="project-placeholder" aria-label="Replace with capstone screenshot or diagram">
+                <div class="window"></div>
+                <div class="line mid"></div>
+                <div class="line"></div>
+                <div class="line short"></div>
+                <div class="line"></div>
+                <div class="line mid"></div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="pill">Capstone</span>
+                <span class="pill">Optimization</span>
+              </div>
+              <h3>TitanQ Solver Evaluation and Optimization Benchmarking</h3>
+              <p>
+                This capstone project focused on evaluating the usability and performance of the TitanQ quantum-inspired solver developed by InfinityQ. The project involved modeling optimization problems, benchmarking solution quality and runtime, and comparing TitanQ with CPLEX across scheduling and vehicle routing problem settings.
+              </p>
+              <p><strong>My role:</strong> Contributed to modeling, experimentation, result interpretation, and communication of findings across project iterations.</p>
+              <p><strong>Key skills:</strong> Optimization modeling, benchmarking, data analysis, experimentation, technical communication.</p>
+              <p>
+                <strong>Reflection:</strong> This project strengthened my ability to evaluate technical tools beyond surface-level performance claims. I learned how to compare methods systematically, interpret trade-offs, and communicate results in a way that balances technical rigor with practical relevance.
+              </p>
+              <div class="project-links">
+                <a href="#">Add GitHub Link</a>
+                <a href="#">Add Slides / Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div class="project-media">
+              <div class="project-placeholder" aria-label="Replace with Hconnect screenshots">
+                <div class="window"></div>
+                <div class="line"></div>
+                <div class="line mid"></div>
+                <div class="line short"></div>
+                <div class="line"></div>
+                <div class="line mid"></div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="pill">Web App</span>
+                <span class="pill">FinTech</span>
+                <span class="pill">Frontend</span>
+              </div>
+              <h3>Hconnect – Credit Card Optimization Web Application</h3>
+              <p>
+                Hconnect is a web-based financial application designed to help users optimize credit card usage and maximize rewards based on spending behavior. The platform aims to make complex financial choices more understandable through a practical, user-friendly digital experience.
+              </p>
+              <p><strong>My role:</strong> Primarily responsible for frontend development, including responsive interface implementation, UI component development, and integration with backend APIs.</p>
+              <p><strong>Key skills:</strong> React, HTML, CSS, JavaScript, API integration, component-based UI design, Git/GitHub collaboration.</p>
+              <p>
+                <strong>Reflection:</strong> This project deepened my understanding of how frontend development supports product usability. A key challenge was integrating interface logic with backend data while maintaining clarity for users. Through this experience, I improved my ability to translate product requirements into practical and accessible web interfaces.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/ChunangXu/HCONNECT2" target="_blank" rel="noopener noreferrer">Frontend Repository</a>
+                <a href="https://github.com/angjinn63/6940Hconnect" target="_blank" rel="noopener noreferrer">Project Repository</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div class="project-media">
+              <div class="project-placeholder" aria-label="Replace with charts or code screenshots">
+                <div class="window"></div>
+                <div class="line short"></div>
+                <div class="line"></div>
+                <div class="line mid"></div>
+                <div class="line"></div>
+                <div class="line short"></div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="pill">Machine Learning</span>
+                <span class="pill">Finance</span>
+              </div>
+              <h3>Portfolio Optimization with Transformer-Based Deep Learning</h3>
+              <p>
+                This project explored the use of transformer-based architectures within a deep reinforcement learning framework for portfolio management. The objective was to compare data-driven investment strategies with more traditional financial decision approaches.
+              </p>
+              <p><strong>My role:</strong> Worked on model understanding, experiment setup, evaluation framing, and interpretation of financial performance outcomes.</p>
+              <p><strong>Key skills:</strong> Python, machine learning, deep learning concepts, financial modeling, performance evaluation.</p>
+              <p>
+                <strong>Reflection:</strong> I gained stronger intuition about the gap between theoretical model performance and real-world financial decision-making. The project also helped me become more comfortable discussing technical model design in business-relevant terms.
+              </p>
+              <div class="project-links">
+                <a href="#">Add GitHub Link</a>
+                <a href="#">Add Report / Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div class="project-media">
+              <div class="project-placeholder" aria-label="Replace with system screenshots">
+                <div class="window"></div>
+                <div class="line"></div>
+                <div class="line short"></div>
+                <div class="line"></div>
+                <div class="line mid"></div>
+                <div class="line short"></div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="pill">Database</span>
+                <span class="pill">Workflow System</span>
+              </div>
+              <h3>Online Workflow Management Database System</h3>
+              <p>
+                This project involved developing an online workflow management database for a small company, with functions related to employee accounts, leave and business processes, attendance records, and internal technical documentation support.
+              </p>
+              <p><strong>My role:</strong> Contributed to requirements understanding, system logic planning, and database-oriented workflow design.</p>
+              <p><strong>Key skills:</strong> SQL, data organization, workflow design, systems thinking, requirement analysis.</p>
+              <p>
+                <strong>Reflection:</strong> This work improved my understanding of how internal business systems support operational efficiency. It also reinforced the importance of designing solutions that are not only technically correct but also sustainable for day-to-day users.
+              </p>
+              <div class="project-links">
+                <a href="#">Add GitHub Link</a>
+                <a href="#">Add Screenshots</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Skills and Strengths</h2>
+            <p>Technical and professional capabilities developed through coursework, projects, and collaborative work.</p>
+          </div>
+        </div>
+
+        <div class="skills-grid">
+          <div class="card content-card skill-card">
+            <h3>Programming and Development</h3>
+            <ul>
+              <li>Python</li>
+              <li>SQL</li>
+              <li>R</li>
+              <li>JavaScript</li>
+              <li>HTML / CSS</li>
+              <li>React</li>
+            </ul>
+          </div>
+
+          <div class="card content-card skill-card">
+            <h3>Data and Analytics</h3>
+            <ul>
+              <li>Data cleaning and preprocessing</li>
+              <li>Exploratory data analysis</li>
+              <li>Model evaluation</li>
+              <li>Excel-based analysis</li>
+              <li>Statistical reasoning</li>
+              <li>Visualization and reporting</li>
+            </ul>
+          </div>
+
+          <div class="card content-card skill-card">
+            <h3>Machine Learning and Modeling</h3>
+            <ul>
+              <li>Supervised learning concepts</li>
+              <li>Deep learning foundations</li>
+              <li>Optimization problem modeling</li>
+              <li>Benchmarking and experimentation</li>
+            </ul>
+          </div>
+
+          <div class="card content-card skill-card">
+            <h3>Professional Skills</h3>
+            <ul>
+              <li>Agile collaboration</li>
+              <li>Project coordination</li>
+              <li>Technical communication</li>
+              <li>Problem solving</li>
+              <li>User-centered thinking</li>
+              <li>Cross-functional teamwork</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume">
+      <div class="container">
+        <div class="card resume-box">
+          <div>
+            <h2 style="margin-bottom:8px;">Resume</h2>
+            <p class="muted" style="margin:0;">Upload your latest PDF to the same GitHub repository and replace the link below.</p>
+          </div>
+          <a class="btn btn-primary" href="resume.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="extras">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Additional Evidence</h2>
+            <p>Optional content that can further strengthen the portfolio for academic and professional audiences.</p>
+          </div>
+        </div>
+        <div class="extra-grid">
+          <div class="card content-card">
+            <h3>Presentations and Course Deliverables</h3>
+            <p class="muted">
+              Add conference-style presentations, class slide decks, posters, or major written reports that demonstrate communication and synthesis skills.
+            </p>
+          </div>
+          <div class="card content-card">
+            <h3>Professional Experience and Recognition</h3>
+            <p class="muted">
+              Add internships, awards, certifications, leadership roles, or publications here to further support your professional narrative.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Contact</h2>
+            <p>Professional contact details for networking, collaboration, and career opportunities.</p>
+          </div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="card content-card">
+            <h3>Email</h3>
+            <p><a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <h3 style="margin-top:20px;">LinkedIn</h3>
+            <p><a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener noreferrer">linkedin.com/in/your-linkedin</a></p>
+          </div>
+
+          <div class="card content-card">
+            <h3>GitHub</h3>
+            <p><a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">github.com/yourusername</a></p>
+            <h3 style="margin-top:20px;">Availability</h3>
+            <p class="muted">
+              Open to academic collaboration, internship opportunities, and full-time roles in data, product, analytics, and technology-focused business functions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Siting (Mavis) Chen. Built for digital portfolio and academic reflection.</p>
+    </div>
+  </footer>
+</body>
 </html>
+
