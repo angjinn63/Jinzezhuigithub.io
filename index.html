@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Siting (Mavis) Chen | Portfolio</title>
-  <meta name="description" content="Digital portfolio of Siting (Mavis) Chen, MPS Informatics graduate student focused on data analytics, fintech, and user-centered technology solutions." />
+  <title>Jinze Zhu | Portfolio</title>
+  <meta name="description" content="Digital portfolio of Jinze Zhu, M.S. in Informatics student at Northeastern University, focused on software development, frontend engineering, data analysis, and applied AI systems." />
   <style>
     :root {
-      --bg: #f7f9fc;
+      --bg: #f6f8fc;
       --surface: #ffffff;
-      --surface-2: #f0f4fa;
+      --surface-2: #eef4ff;
       --text: #1f2937;
       --muted: #6b7280;
-      --line: #dbe4f0;
+      --line: #d9e3f0;
       --primary: #1d4ed8;
       --primary-2: #2563eb;
       --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
@@ -26,7 +26,7 @@
       margin: 0;
       font-family: Inter, Arial, Helvetica, sans-serif;
       color: var(--text);
-      background: linear-gradient(180deg, #f8fbff 0%, #f7f9fc 100%);
+      background: linear-gradient(180deg, #f9fbff 0%, #f6f8fc 100%);
       line-height: 1.65;
     }
 
@@ -44,8 +44,8 @@
       top: 0;
       z-index: 1000;
       backdrop-filter: blur(14px);
-      background: rgba(247, 249, 252, 0.86);
-      border-bottom: 1px solid rgba(219, 228, 240, 0.9);
+      background: rgba(246, 248, 252, 0.88);
+      border-bottom: 1px solid rgba(217, 227, 240, 0.95);
     }
 
     .nav {
@@ -86,7 +86,7 @@
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
+      grid-template-columns: 1.18fr 0.82fr;
       gap: 28px;
       align-items: stretch;
     }
@@ -108,7 +108,7 @@
       gap: 8px;
       padding: 8px 12px;
       border-radius: 999px;
-      background: #eaf1ff;
+      background: #e8f0ff;
       color: var(--primary);
       font-size: 0.86rem;
       font-weight: 700;
@@ -123,8 +123,8 @@
     .lead {
       font-size: 1.06rem;
       color: var(--muted);
-      max-width: 60ch;
-      margin-bottom: 24px;
+      max-width: 62ch;
+      margin-bottom: 18px;
     }
 
     .actions {
@@ -215,15 +215,14 @@
     }
 
     .about-grid,
-    .skills-grid,
-    .contact-grid,
-    .extra-grid {
+    .resume-grid,
+    .contact-grid {
       display: grid;
       gap: 20px;
     }
 
     .about-grid {
-      grid-template-columns: 1.15fr 0.85fr;
+      grid-template-columns: 1.1fr 0.9fr;
     }
 
     .content-card { padding: 28px; }
@@ -258,7 +257,7 @@
     }
 
     .project-media {
-      min-height: 240px;
+      min-height: 250px;
       border-radius: 16px;
       overflow: hidden;
       border: 1px solid var(--line);
@@ -274,7 +273,7 @@
       height: 100%;
       border-radius: 12px;
       background:
-        linear-gradient(180deg, rgba(255,255,255,0.85), rgba(255,255,255,0.95)),
+        linear-gradient(180deg, rgba(255,255,255,0.88), rgba(255,255,255,0.96)),
         linear-gradient(135deg, #60a5fa, #2563eb);
       border: 1px dashed #93c5fd;
       padding: 18px;
@@ -322,7 +321,9 @@
     }
 
     .project-content p { margin: 0 0 12px; color: #374151; }
-    .project-content ul {
+    .project-content ul,
+    .resume-list,
+    .skill-list {
       margin: 10px 0 14px 18px;
       padding: 0;
     }
@@ -334,26 +335,16 @@
       margin-top: 12px;
     }
 
-    .skills-grid {
+    .resume-grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .skill-card ul {
-      margin: 10px 0 0 18px;
-      padding: 0;
-    }
-
-    .resume-box {
-      display: flex;
-      gap: 16px;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      padding: 24px 28px;
+    .resume-section h3,
+    .contact-card h3 {
+      margin-bottom: 10px;
     }
 
     .contact-grid { grid-template-columns: 1fr 1fr; }
-    .extra-grid { grid-template-columns: 1fr 1fr; }
 
     footer {
       padding: 36px 0 50px;
@@ -367,9 +358,8 @@
       .hero-grid,
       .about-grid,
       .project-card,
-      .skills-grid,
-      .contact-grid,
-      .extra-grid {
+      .resume-grid,
+      .contact-grid {
         grid-template-columns: 1fr;
       }
 
@@ -414,11 +404,10 @@
 <body>
   <div class="topbar">
     <div class="container nav">
-      <a class="brand" href="#home">Siting <span>Chen</span></a>
+      <a class="brand" href="#home">Jinze <span>Zhu</span></a>
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
         <a href="#resume">Resume</a>
         <a href="#contact">Contact</a>
       </div>
@@ -430,41 +419,40 @@
       <div class="container hero-grid">
         <div class="card hero-copy">
           <div class="eyebrow">Digital Portfolio</div>
-          <h1>Siting (Mavis) Chen</h1>
+          <h1>Jinze Zhu</h1>
           <p class="lead">
-            Graduate student in Informatics with a background in engineering, data analytics, and financial technology.
-            I build practical, user-centered solutions across web applications, optimization, and data-driven decision support.
+            M.S. in Informatics student at Northeastern University with an interdisciplinary background in computer science, chemistry, and physics. I am especially interested in software development, frontend engineering, data analysis, and practical AI applications.
           </p>
           <p class="lead">
-            I am interested in roles such as Data Analyst, Product Analyst, Business Analyst, and technology-focused risk or operations roles where I can combine technical execution with problem solving and clear communication.
+            My academic and project experience centers on building usable digital systems, connecting frontend interfaces with backend services, and translating technical ideas into tools that support real users and real workflows.
           </p>
           <div class="actions">
             <a class="btn btn-primary" href="#projects">View Projects</a>
-            <a class="btn btn-secondary" href="#contact">Get In Touch</a>
+            <a class="btn btn-secondary" href="#contact">Contact Me</a>
           </div>
         </div>
 
         <div class="card hero-panel">
-          <h3>Professional Snapshot</h3>
+          <h3>Quick Snapshot</h3>
           <p class="muted">
-            MPS Informatics candidate at Northeastern University with prior training in Industrial Engineering and experience spanning frontend development, analytics, and applied research.
+            Graduate student with coursework in data structures, programming languages, software design, visual and image algorithms, and frontend and web programming, combined with hands-on project experience in web systems and applied AI.
           </p>
           <div class="stat-grid">
             <div class="stat">
-              <strong>4</strong>
-              <span class="muted">Selected projects</span>
+              <strong>2</strong>
+              <span class="muted">Featured software projects</span>
             </div>
             <div class="stat">
-              <strong>3+</strong>
-              <span class="muted">Core domains</span>
+              <strong>Full Stack</strong>
+              <span class="muted">Frontend + backend exposure</span>
             </div>
             <div class="stat">
-              <strong>Tech</strong>
-              <span class="muted">Web, data, ML</span>
+              <strong>AI</strong>
+              <span class="muted">Applied text classification</span>
             </div>
             <div class="stat">
               <strong>Focus</strong>
-              <span class="muted">Impact and usability</span>
+              <span class="muted">Clean implementation and usability</span>
             </div>
           </div>
         </div>
@@ -476,38 +464,39 @@
         <div class="section-head">
           <div>
             <h2>About Me</h2>
-            <p>A concise introduction to my academic background, technical interests, and career direction.</p>
+            <p>A concise overview of my academic background, technical interests, and professional direction.</p>
           </div>
         </div>
 
         <div class="about-grid">
           <div class="card content-card">
             <p>
-              I am a graduate student in the <strong>Master of Professional Studies in Informatics</strong> program at Northeastern University. My academic journey has been shaped by interdisciplinary training across engineering, data analysis, and technology-enabled problem solving.
+              I am currently pursuing a <strong>Master of Science in Informatics</strong> at Northeastern University in Boston. Before starting this program, I completed a <strong>Bachelor of Science in Chemistry</strong> at the University of Toronto, with minors in <strong>Computer Science and Physics</strong>.
             </p>
             <p>
-              Through coursework and team projects, I have developed experience in <strong>frontend development, data analytics, machine learning, and product-oriented thinking</strong>. I enjoy working on projects that require both technical implementation and clear communication, especially when the goal is to make complex information more practical and accessible for users.
+              My computer-related coursework includes data structures and algorithms, programming languages and compilation, software design, linear algebra, statistics and calculus, visual and image algorithms, and frontend and web-oriented programming. These experiences helped me build a solid technical foundation while also developing the ability to approach problems from an interdisciplinary perspective.
             </p>
             <p>
-              My recent work includes building web applications, exploring data-driven financial tools, and contributing to optimization-focused capstone work. Across these experiences, I have strengthened my ability to collaborate in teams, translate requirements into working solutions, and reflect critically on how technical systems create value in real settings.
+              I am most interested in building software that is practical, maintainable, and easy to use. My recent work has involved frontend development, API-connected web systems, and AI-enabled backend applications. I enjoy contributing to products where technical implementation and user experience both matter.
             </p>
           </div>
 
           <div class="card content-card">
-            <h3>Areas of Interest</h3>
+            <h3>Technical Interests</h3>
             <div class="tag-list">
-              <span class="tag">Data Analytics</span>
               <span class="tag">Frontend Development</span>
-              <span class="tag">FinTech</span>
-              <span class="tag">Machine Learning</span>
-              <span class="tag">Optimization</span>
-              <span class="tag">Product Thinking</span>
-              <span class="tag">UX for Decision Support</span>
-              <span class="tag">Agile Collaboration</span>
+              <span class="tag">React</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Python</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Data Analysis</span>
+              <span class="tag">Applied AI</span>
+              <span class="tag">Web Systems</span>
             </div>
-            <h3 style="margin-top:22px;">Career Goal</h3>
+            <h3 style="margin-top:22px;">Career Direction</h3>
             <p class="muted">
-              To contribute to data-informed and user-focused technology teams where I can bridge analysis, implementation, and communication in support of better business and product decisions.
+              I am seeking opportunities where I can continue growing as a software and data-oriented problem solver, especially in roles related to web development, technical product implementation, and applied data systems.
             </p>
           </div>
         </div>
@@ -519,16 +508,14 @@
         <div class="section-head">
           <div>
             <h2>Selected Projects</h2>
-            <p>
-              A curated set of academic and applied projects highlighting my experience in web development, analytics, optimization, and financial technology.
-            </p>
+            <p>Two featured repositories that best represent my recent work in frontend engineering, full-stack web development, and AI-enabled backend systems.</p>
           </div>
         </div>
 
         <div class="project-grid">
           <article class="card project-card">
             <div class="project-media">
-              <div class="project-placeholder" aria-label="Replace with capstone screenshot or diagram">
+              <div class="project-placeholder" aria-label="Replace with 6940 screenshots">
                 <div class="window"></div>
                 <div class="line mid"></div>
                 <div class="line"></div>
@@ -539,28 +526,30 @@
             </div>
             <div class="project-content">
               <div class="project-meta">
-                <span class="pill">Capstone</span>
-                <span class="pill">Optimization</span>
+                <span class="pill">AI Application</span>
+                <span class="pill">FastAPI</span>
+                <span class="pill">React</span>
               </div>
-              <h3>TitanQ Solver Evaluation and Optimization Benchmarking</h3>
+              <h3>6940 – AI Identity Classification Web System</h3>
               <p>
-                This capstone project focused on evaluating the usability and performance of the TitanQ quantum-inspired solver developed by InfinityQ. The project involved modeling optimization problems, benchmarking solution quality and runtime, and comparing TitanQ with CPLEX across scheduling and vehicle routing problem settings.
+                This repository contains a full-stack application with separate <strong>frontend</strong> and <strong>backend</strong> folders. The backend is built with <strong>FastAPI</strong>, uses <strong>SQLite with SQLAlchemy</strong>, loads an <code>ai_identities</code> module, applies text preprocessing with <strong>spaCy</strong>, and exposes an <code>/identify-by-text</code> API for classifying text input and returning prediction confidence and top results.
               </p>
-              <p><strong>My role:</strong> Contributed to modeling, experimentation, result interpretation, and communication of findings across project iterations.</p>
-              <p><strong>Key skills:</strong> Optimization modeling, benchmarking, data analysis, experimentation, technical communication.</p>
               <p>
-                <strong>Reflection:</strong> This project strengthened my ability to evaluate technical tools beyond surface-level performance claims. I learned how to compare methods systematically, interpret trade-offs, and communicate results in a way that balances technical rigor with practical relevance.
+                <strong>My contribution:</strong> I contributed to the web application structure and implementation workflow, with exposure to both interface and backend-connected system behavior. The project demonstrates my ability to work with API-based systems and understand how frontend and backend components fit together in an applied AI product.
+              </p>
+              <p><strong>Key skills:</strong> Python, FastAPI, SQLAlchemy, SQLite, React, JavaScript, NLP preprocessing, API design.</p>
+              <p>
+                <strong>Reflection:</strong> This project helped me understand how an AI-enabled application is packaged into a usable web system. I became more comfortable reading backend logic, following data flow from input to prediction, and thinking about how machine learning outputs should be presented clearly to users.
               </p>
               <div class="project-links">
-                <a href="#">Add GitHub Link</a>
-                <a href="#">Add Slides / Demo</a>
+                <a href="https://github.com/angjinn63/6940" target="_blank" rel="noopener noreferrer">View Repository</a>
               </div>
             </div>
           </article>
 
           <article class="card project-card">
             <div class="project-media">
-              <div class="project-placeholder" aria-label="Replace with Hconnect screenshots">
+              <div class="project-placeholder" aria-label="Replace with HCONNECT2 screenshots">
                 <div class="window"></div>
                 <div class="line"></div>
                 <div class="line mid"></div>
@@ -571,183 +560,86 @@
             </div>
             <div class="project-content">
               <div class="project-meta">
-                <span class="pill">Web App</span>
-                <span class="pill">FinTech</span>
+                <span class="pill">Healthcare Web App</span>
                 <span class="pill">Frontend</span>
+                <span class="pill">Full Stack</span>
               </div>
-              <h3>Hconnect – Credit Card Optimization Web Application</h3>
+              <h3>HCONNECT2 – Healthcare Monitoring and Management Web App</h3>
               <p>
-                Hconnect is a web-based financial application designed to help users optimize credit card usage and maximize rewards based on spending behavior. The platform aims to make complex financial choices more understandable through a practical, user-friendly digital experience.
+                HCONNECT2 is a healthcare monitoring and management web application organized into a <strong>React + Vite frontend</strong> and a <strong>Node.js + Express backend</strong>, with <strong>PostgreSQL</strong> for data storage, <strong>Auth0</strong> for authentication, and <strong>Twilio</strong> for SMS verification. The repository also includes local development instructions and production deployment guidance for a GCP VM with Nginx and PM2.
               </p>
-              <p><strong>My role:</strong> Primarily responsible for frontend development, including responsive interface implementation, UI component development, and integration with backend APIs.</p>
-              <p><strong>Key skills:</strong> React, HTML, CSS, JavaScript, API integration, component-based UI design, Git/GitHub collaboration.</p>
               <p>
-                <strong>Reflection:</strong> This project deepened my understanding of how frontend development supports product usability. A key challenge was integrating interface logic with backend data while maintaining clarity for users. Through this experience, I improved my ability to translate product requirements into practical and accessible web interfaces.
+                <strong>My contribution:</strong> I focused on frontend-related work, including interface implementation, component-level development, and coordinating frontend behavior with backend APIs. This project reflects my interest in building responsive and usable web applications that connect cleanly to supporting services.
+              </p>
+              <p><strong>Key skills:</strong> React, Vite, JavaScript, HTML, CSS, API integration, Node.js, Express, PostgreSQL, deployment workflow awareness.</p>
+              <p>
+                <strong>Reflection:</strong> This project strengthened my frontend development skills and gave me more confidence working in a full-stack environment. A major learning point was understanding how authentication, verification, database structure, and deployment considerations all influence the design of the user interface.
               </p>
               <div class="project-links">
-                <a href="https://github.com/ChunangXu/HCONNECT2" target="_blank" rel="noopener noreferrer">Frontend Repository</a>
-                <a href="https://github.com/angjinn63/6940Hconnect" target="_blank" rel="noopener noreferrer">Project Repository</a>
+                <a href="https://github.com/angjinn63/HCONNECT2" target="_blank" rel="noopener noreferrer">View Repository</a>
               </div>
             </div>
           </article>
-
-          <article class="card project-card">
-            <div class="project-media">
-              <div class="project-placeholder" aria-label="Replace with charts or code screenshots">
-                <div class="window"></div>
-                <div class="line short"></div>
-                <div class="line"></div>
-                <div class="line mid"></div>
-                <div class="line"></div>
-                <div class="line short"></div>
-              </div>
-            </div>
-            <div class="project-content">
-              <div class="project-meta">
-                <span class="pill">Machine Learning</span>
-                <span class="pill">Finance</span>
-              </div>
-              <h3>Portfolio Optimization with Transformer-Based Deep Learning</h3>
-              <p>
-                This project explored the use of transformer-based architectures within a deep reinforcement learning framework for portfolio management. The objective was to compare data-driven investment strategies with more traditional financial decision approaches.
-              </p>
-              <p><strong>My role:</strong> Worked on model understanding, experiment setup, evaluation framing, and interpretation of financial performance outcomes.</p>
-              <p><strong>Key skills:</strong> Python, machine learning, deep learning concepts, financial modeling, performance evaluation.</p>
-              <p>
-                <strong>Reflection:</strong> I gained stronger intuition about the gap between theoretical model performance and real-world financial decision-making. The project also helped me become more comfortable discussing technical model design in business-relevant terms.
-              </p>
-              <div class="project-links">
-                <a href="#">Add GitHub Link</a>
-                <a href="#">Add Report / Demo</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card project-card">
-            <div class="project-media">
-              <div class="project-placeholder" aria-label="Replace with system screenshots">
-                <div class="window"></div>
-                <div class="line"></div>
-                <div class="line short"></div>
-                <div class="line"></div>
-                <div class="line mid"></div>
-                <div class="line short"></div>
-              </div>
-            </div>
-            <div class="project-content">
-              <div class="project-meta">
-                <span class="pill">Database</span>
-                <span class="pill">Workflow System</span>
-              </div>
-              <h3>Online Workflow Management Database System</h3>
-              <p>
-                This project involved developing an online workflow management database for a small company, with functions related to employee accounts, leave and business processes, attendance records, and internal technical documentation support.
-              </p>
-              <p><strong>My role:</strong> Contributed to requirements understanding, system logic planning, and database-oriented workflow design.</p>
-              <p><strong>Key skills:</strong> SQL, data organization, workflow design, systems thinking, requirement analysis.</p>
-              <p>
-                <strong>Reflection:</strong> This work improved my understanding of how internal business systems support operational efficiency. It also reinforced the importance of designing solutions that are not only technically correct but also sustainable for day-to-day users.
-              </p>
-              <div class="project-links">
-                <a href="#">Add GitHub Link</a>
-                <a href="#">Add Screenshots</a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <h2>Skills and Strengths</h2>
-            <p>Technical and professional capabilities developed through coursework, projects, and collaborative work.</p>
-          </div>
-        </div>
-
-        <div class="skills-grid">
-          <div class="card content-card skill-card">
-            <h3>Programming and Development</h3>
-            <ul>
-              <li>Python</li>
-              <li>SQL</li>
-              <li>R</li>
-              <li>JavaScript</li>
-              <li>HTML / CSS</li>
-              <li>React</li>
-            </ul>
-          </div>
-
-          <div class="card content-card skill-card">
-            <h3>Data and Analytics</h3>
-            <ul>
-              <li>Data cleaning and preprocessing</li>
-              <li>Exploratory data analysis</li>
-              <li>Model evaluation</li>
-              <li>Excel-based analysis</li>
-              <li>Statistical reasoning</li>
-              <li>Visualization and reporting</li>
-            </ul>
-          </div>
-
-          <div class="card content-card skill-card">
-            <h3>Machine Learning and Modeling</h3>
-            <ul>
-              <li>Supervised learning concepts</li>
-              <li>Deep learning foundations</li>
-              <li>Optimization problem modeling</li>
-              <li>Benchmarking and experimentation</li>
-            </ul>
-          </div>
-
-          <div class="card content-card skill-card">
-            <h3>Professional Skills</h3>
-            <ul>
-              <li>Agile collaboration</li>
-              <li>Project coordination</li>
-              <li>Technical communication</li>
-              <li>Problem solving</li>
-              <li>User-centered thinking</li>
-              <li>Cross-functional teamwork</li>
-            </ul>
-          </div>
         </div>
       </div>
     </section>
 
     <section id="resume">
       <div class="container">
-        <div class="card resume-box">
-          <div>
-            <h2 style="margin-bottom:8px;">Resume</h2>
-            <p class="muted" style="margin:0;">Upload your latest PDF to the same GitHub repository and replace the link below.</p>
-          </div>
-          <a class="btn btn-primary" href="resume.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="extras">
-      <div class="container">
         <div class="section-head">
           <div>
-            <h2>Additional Evidence</h2>
-            <p>Optional content that can further strengthen the portfolio for academic and professional audiences.</p>
+            <h2>Resume</h2>
+            <p>Selected computer-related education, project work, technical experience, and skills based on my current resume.</p>
           </div>
         </div>
-        <div class="extra-grid">
-          <div class="card content-card">
-            <h3>Presentations and Course Deliverables</h3>
-            <p class="muted">
-              Add conference-style presentations, class slide decks, posters, or major written reports that demonstrate communication and synthesis skills.
-            </p>
+
+        <div class="resume-grid">
+          <div class="card content-card resume-section">
+            <h3>Education</h3>
+            <ul class="resume-list">
+              <li><strong>Northeastern University</strong>, Boston, MA<br />M.S. in Informatics, 2024 – Present</li>
+              <li><strong>University of Toronto</strong>, Toronto, ON<br />B.S. in Chemistry, with minors in Computer Science and Physics, 2018 – 2024</li>
+            </ul>
+
+            <h3>Relevant Computer Coursework</h3>
+            <ul class="resume-list">
+              <li>Data Structures and Algorithms</li>
+              <li>Programming Languages and Compilation</li>
+              <li>Software Design</li>
+              <li>Linear Algebra, Statistics, and Calculus</li>
+              <li>Visual and Image Algorithms</li>
+              <li>Frontend and Web Programming</li>
+            </ul>
           </div>
-          <div class="card content-card">
-            <h3>Professional Experience and Recognition</h3>
-            <p class="muted">
-              Add internships, awards, certifications, leadership roles, or publications here to further support your professional narrative.
+
+          <div class="card content-card resume-section">
+            <h3>Selected Software Experience</h3>
+            <ul class="resume-list">
+              <li>
+                <strong>OneOnOne Social Platform Development</strong><br />
+                Designed UI and frontend pages using HTML, CSS, React, and JavaScript; contributed to user and post management logic, testing, deployment, and API stability.
+              </li>
+              <li>
+                <strong>Programmer, Shenzhen Yongbao Group</strong><br />
+                Developed and maintained web-based office software for leave requests, attendance, and business workflows; supported internal ISO process management and system maintenance.
+              </li>
+            </ul>
+          </div>
+
+          <div class="card content-card resume-section">
+            <h3>Technical Skills</h3>
+            <ul class="skill-list">
+              <li><strong>Programming:</strong> Java, Python, C, JavaScript, HTML, CSS, React, Vue, R</li>
+              <li><strong>Data & Analysis:</strong> Excel, SQL, Minitab</li>
+              <li><strong>Web Development:</strong> React, frontend UI design, API-connected interfaces</li>
+              <li><strong>Languages:</strong> English, Mandarin Chinese</li>
+            </ul>
+          </div>
+
+          <div class="card content-card resume-section">
+            <h3>Professional Profile</h3>
+            <p>
+              I bring a cross-disciplinary background that combines scientific training with software-oriented problem solving. My resume reflects experience in frontend design, system implementation, data analysis, and maintaining practical web-based tools for users in real organizational settings.
             </p>
           </div>
         </div>
@@ -759,24 +651,28 @@
         <div class="section-head">
           <div>
             <h2>Contact</h2>
-            <p>Professional contact details for networking, collaboration, and career opportunities.</p>
+            <p>Professional contact details for communication, networking, and future opportunities.</p>
           </div>
         </div>
 
         <div class="contact-grid">
-          <div class="card content-card">
-            <h3>Email</h3>
-            <p><a href="mailto:your.email@example.com">your.email@example.com</a></p>
-            <h3 style="margin-top:20px;">LinkedIn</h3>
-            <p><a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener noreferrer">linkedin.com/in/your-linkedin</a></p>
+          <div class="card content-card contact-card">
+            <h3>Name</h3>
+            <p>Jinze Zhu</p>
+            <h3 style="margin-top:20px;">Phone</h3>
+            <p><a href="tel:+8618636626126">+86 186 3662 6126</a></p>
+            <h3 style="margin-top:20px;">Email</h3>
+            <p><a href="mailto:849060764@qq.com">849060764@qq.com</a></p>
           </div>
 
-          <div class="card content-card">
+          <div class="card content-card contact-card">
             <h3>GitHub</h3>
-            <p><a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">github.com/yourusername</a></p>
-            <h3 style="margin-top:20px;">Availability</h3>
+            <p><a href="https://github.com/angjinn63" target="_blank" rel="noopener noreferrer">github.com/angjinn63</a></p>
+            <h3 style="margin-top:20px;">Location</h3>
+            <p>Boston, MA / Toronto, ON</p>
+            <h3 style="margin-top:20px;">Open To</h3>
             <p class="muted">
-              Open to academic collaboration, internship opportunities, and full-time roles in data, product, analytics, and technology-focused business functions.
+              Software development, frontend engineering, web application implementation, and data-related technical roles.
             </p>
           </div>
         </div>
@@ -786,9 +682,10 @@
 
   <footer>
     <div class="container">
-      <p>© 2026 Siting (Mavis) Chen. Built for digital portfolio and academic reflection.</p>
+      <p>© 2026 Jinze Zhu. Built as a digital portfolio and academic showcase.</p>
     </div>
   </footer>
 </body>
 </html>
+
 
